@@ -1,0 +1,71 @@
+.log-in-form {
+  padding: 64px 48px;
+  background: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px 0px rgba(92, 101, 106, 0.25);
+
+  h1,
+  p:first-of-type {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  p:first-of-type {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  p:last-of-type {
+    margin-top: 12px;
+    font-size: 10px;
+    font-weight: 400;
+
+    a {
+      color: var(--color-red);
+    }
+  }
+
+  button {
+    margin-top: 24px;
+  }
+
+  @media (max-width: 768px) {
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+.field-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+
+  &:nth-of-type(2) {
+    margin-top: 16px;
+  }
+
+  a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-red);
+  }
+}
+
+.checkbox-row {
+  margin-top: 8px;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+}

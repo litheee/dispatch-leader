@@ -1,0 +1,45 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-blue);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1384px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}

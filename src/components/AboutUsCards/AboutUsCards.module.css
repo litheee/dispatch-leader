@@ -1,0 +1,56 @@
+.about-us-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  li {
+    min-height: 512px;
+    padding: 64px 16px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px 0px rgba(92, 101, 106, 0.25);
+    background: url('@/assets/img/highway-interchange.png');
+    background-size: cover;
+    box-sizing: border-box;
+
+    h3 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 36px;
+      line-height: 125%;
+      text-align: justify;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    li {
+      padding: 58px 16px;
+      min-width: 336px;
+      min-height: auto;
+      flex-basis: calc(100% / 3);
+      flex-grow: 1;
+    }
+  }
+
+  @media (max-width: 550px) {
+    li {
+      min-width: 100%;
+
+      h3 {
+        font-size: 36px;
+      }
+
+      p {
+        margin-top: 24px;
+        font-size: 16px;
+      }
+    }
+  }
+}

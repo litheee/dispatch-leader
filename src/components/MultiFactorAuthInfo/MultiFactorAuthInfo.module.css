@@ -1,0 +1,72 @@
+.multi-factor-auth {
+  flex-grow: 1;
+  padding: 64px 36px;
+  background-image: url('@/assets/img/road-in-mountains.png');
+  background-size: cover;
+  color: var(--color-white);
+
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  @media (max-width: 550px) {
+    padding: 32px 20px;
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 64px;
+  font-size: 18px;
+  line-height: 22px;
+
+  ul {
+    margin-left: 22px;
+    list-style: disc;
+  }
+
+  @media (max-width: 550px) {
+    margin-top: 24px;
+    gap: 10px;
+    font-size: 16px;
+  }
+}
+
+.additional-assistance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 64px;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  @media (max-width: 550px) {
+    margin-top: 24px;
+    align-items: flex-start;
+
+    a,
+    button {
+      width: 100%;
+    }
+
+    button {
+      padding: 16px 24px;
+    }
+  }
+}
+
+.additional-assistance-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

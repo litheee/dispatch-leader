@@ -1,0 +1,58 @@
+.log-in-page {
+  header {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      position: relative;
+      display: block;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  min-height: 100vh;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 24px 20px 36px;
+  background: var(--color-gray-light);
+
+  @media (max-width: 768px) {
+    padding-bottom: 36px;
+    background: var(--color-white);
+
+    .logo {
+      display: none;
+    }
+  }
+}
+
+.log-in-form {
+  margin-top: 64px;
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.right {
+  display: flex;
+  max-width: 719px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}

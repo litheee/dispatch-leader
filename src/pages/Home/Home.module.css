@@ -1,0 +1,6 @@
+.home-page {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 28px 0;
+}

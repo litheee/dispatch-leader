@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+  height: 96px;
+  background: var(--color-gray-light);
+  box-shadow: 0px 4px 8px 0px rgba(92, 101, 106, 0.25);
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+.right {
+  display: flex;
+}
+
+.common-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.auth-links {
+  display: flex;
+  gap: 16px;
+  margin-left: 32px;
+
+  button {
+    box-shadow: 0px 4px 8px 0px rgba(92, 101, 106, 0.25);
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.hamburger-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+
+  span {
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: var(--color-red);
+  }
+}
+
+@media (max-width: 600px) {
+  .right {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
