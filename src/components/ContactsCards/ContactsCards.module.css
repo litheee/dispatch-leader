@@ -5,6 +5,8 @@
 
   li {
     position: relative;
+    display: flex;
+    flex-direction: column;
     min-height: 512px;
     padding: 36px 16px 20px;
     border-radius: 8px;
@@ -65,6 +67,14 @@
       }
     }
   }
+}
+
+.buttons {
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+  padding-top: 20px;
+  margin-top: auto;
 }
 
 .logo-bg {

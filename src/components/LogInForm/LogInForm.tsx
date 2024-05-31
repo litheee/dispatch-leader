@@ -14,12 +14,12 @@ export const LogInForm = () => {
 
       <div className={classes['field-row']}>
         <Link to={ROUTE_NAMES.HOME}>Forgot your username?</Link>
-        <TextField name='username' placeholder='Username/Email' />
+        <TextField name='username' label='Username/Email' />
       </div>
 
       <div className={classes['field-row']}>
         <Link to={ROUTE_NAMES.HOME}>Reset password</Link>
-        <TextField name='password' placeholder='Password' />
+        <TextField type='password' name='password' label='Password' />
       </div>
 
       <div className={classes['checkbox-row']}>

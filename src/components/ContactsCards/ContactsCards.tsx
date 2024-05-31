@@ -1,3 +1,5 @@
+import { Button } from '@/ui'
+
 import classes from './ContactsCards.module.css'
 import LogoIcon from '@/assets/img/logo-icon.svg?react'
 
@@ -16,6 +18,11 @@ export const ContactsCards = () => {
         <p>Phone: [Phone Number]</p>
         <p>Email: [Customer Service Email]</p>
         <p>Live Chat: Available on our website from 9 AM to 5 PM (Your Time Zone)</p>
+
+        <div className={classes.buttons}>
+          <Button size='medium'>Live Chat</Button>
+          <Button size='medium'>Inquiry Form</Button>
+        </div>
 
         <div className={classes['logo-bg']}>
           <LogoIcon width={309} height={420} />
@@ -37,6 +44,11 @@ export const ContactsCards = () => {
           Fill out our online form, and a sales representative will get back to you within 24 hours.
         </p>
 
+        <div className={classes.buttons}>
+          <Button size='medium'>Live Chat</Button>
+          <Button size='medium'>Inquiry Form</Button>
+        </div>
+
         <div className={classes['logo-bg']}>
           <LogoIcon width={309} height={420} />
         </div>
@@ -53,6 +65,11 @@ export const ContactsCards = () => {
 
         <p>24/7 Helpline: [Phone Number]</p>
         <p>FAQs Live Chat: Available on our website from 9 AM to 5 PM (Your Time Zone)</p>
+
+        <div className={classes.buttons}>
+          <Button size='medium'>Live Chat</Button>
+          <Button size='medium'>Inquiry Form</Button>
+        </div>
 
         <div className={classes['logo-bg']}>
           <LogoIcon width={309} height={420} />

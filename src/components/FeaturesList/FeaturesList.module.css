@@ -1,5 +1,6 @@
 .features-list {
   display: flex;
+  justify-content: space-between;
   gap: 24px;
   width: 100%;
 
@@ -21,7 +22,20 @@
   flex-grow: 1;
   border-radius: 8px;
   box-shadow: 0px 4px 8px 0px rgba(92, 101, 106, 0.25);
+  transition: 0.2s ease-in;
   background-size: cover;
+
+  &:has(~ &:hover) {
+    transform: scale(0.9);
+  }
+
+  &:hover {
+    transform: scale(1.1);
+
+    & ~ * {
+      transform: scale(0.9);
+    }
+  }
 
   &:nth-of-type(1) {
     background-image: url('@/assets/img/card-bg-1.png');
@@ -55,6 +69,15 @@
   @media (max-width: 1030px) {
     height: auto;
     padding: 50px 16px 70px;
+
+    &:has(~ &:hover),
+    &:hover {
+      transform: scale(1);
+
+      & ~ * {
+        transform: scale(1);
+      }
+    }
 
     button {
       margin-top: 36px;

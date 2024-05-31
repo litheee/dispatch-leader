@@ -1,16 +1,50 @@
 .text-field {
+  position: relative;
+}
+
+.input {
   padding: 11px 23px;
   box-sizing: border-box;
   border: 1px solid var(--color-blue);
   border-radius: 5px;
   background: var(--color-white);
   font-family: 'Inter';
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--color-blue);
   outline: none;
+}
 
-  &::placeholder {
-    color: color-mix(in srgb, var(--color-blue), transparent 50%);
-  }
+.input::placeholder {
+  color: transparent;
+}
+
+.label {
+  background: var(--color-white);
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* default */
+.input:placeholder-shown ~ .label {
+  font-size: 16px;
+  font-weight: 600;
+  top: 11px;
+  color: color-mix(in srgb, var(--color-blue), transparent 50%);
+  cursor: text;
+  pointer-events: none;
+}
+
+/* on top */
+.label,
+.input:focus ~ .label {
+  position: absolute;
+  left: 13px;
+  top: -7px;
+  display: block;
+  background: var(--color-white);
+  font-size: 12px;
+  color: var(--color-gray-medium);
+  transition: 0.2s;
 }

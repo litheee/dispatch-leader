@@ -13,6 +13,7 @@
 }
 
 .preview {
+  flex-shrink: 0;
   height: 226px;
   border-radius: 8px 8px 0 0;
   overflow: hidden;
@@ -37,6 +38,7 @@
     font-size: 24px;
     font-weight: 700;
     text-align: justify;
+    line-height: 100%;
   }
 
   p {

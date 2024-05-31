@@ -3,8 +3,15 @@ import { InputHTMLAttributes } from 'react'
 
 import classes from './TextField.module.css'
 
-type TextFieldProps = InputHTMLAttributes<HTMLInputElement>
+type TextFieldProps = {
+  label: string
+} & InputHTMLAttributes<HTMLInputElement>
 
-export const TextField = ({ className, ...props }: TextFieldProps) => {
-  return <input {...props} className={cn(classes['text-field'], className)} />
+export const TextField = ({ className, label, ...props }: TextFieldProps) => {
+  return (
+    <div className={classes['text-field']}>
+      <input placeholder={label} {...props} className={cn(classes.input, className)} />
+      <label className={classes.label}>{label}</label>
+    </div>
+  )
 }
