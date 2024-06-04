@@ -163,6 +163,11 @@
 
 .review-rate {
   position: absolute;
-  bottom: 8px;
+  top: 8px;
   right: 16px;
+
+  @media (max-width: 680px) {
+    top: auto;
+    bottom: 8px;
+  }
 }
