@@ -1,0 +1,73 @@
+.header {
+  width: 100%;
+  height: 96px;
+  background: var(--color-gray-light);
+  box-shadow: 0px 4px 8px 0px rgba(92, 101, 106, 0.25);
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.common-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.auth-links {
+  display: flex;
+  gap: 16px;
+  margin-left: 16px;
+
+  button {
+    box-shadow: 0px 4px 8px 0px rgba(92, 101, 106, 0.25);
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.hamburger-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 36px;
+  height: 24px;
+
+  span {
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background: var(--color-red);
+  }
+}
+
+.admin-button {
+  display: flex;
+  gap: 8px;
+  padding: 4px 16px;
+
+  svg {
+    fill: var(--color-white);
+  }
+}
+
+@media (max-width: 600px) {
+  .right {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}

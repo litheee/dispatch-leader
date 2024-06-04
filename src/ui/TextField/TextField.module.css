@@ -1,16 +1,32 @@
 .text-field {
   position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--color-gray-medium), transparent 70%);
+  background: var(--color-white);
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: 0.2s;
+
+  &:focus,
+  &:hover {
+    border: 1px solid var(--color-blue);
+
+    .label {
+      color: var(--color-blue);
+    }
+  }
 }
 
 .input {
-  padding: 11px 23px;
-  box-sizing: border-box;
-  border: 1px solid var(--color-blue);
-  border-radius: 5px;
-  background: var(--color-white);
+  width: 100%;
+  border-radius: 8px;
+  padding: 13px 16px;
+  border: none;
+  background: transparent;
   font-family: 'Inter';
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-blue);
   outline: none;
 }
@@ -30,7 +46,8 @@
 .input:placeholder-shown ~ .label {
   font-size: 16px;
   font-weight: 600;
-  top: 11px;
+  top: 12px;
+  left: 6px;
   color: color-mix(in srgb, var(--color-blue), transparent 50%);
   cursor: text;
   pointer-events: none;
@@ -40,11 +57,18 @@
 .label,
 .input:focus ~ .label {
   position: absolute;
-  left: 13px;
-  top: -7px;
+  left: 20px;
+  top: -8px;
   display: block;
   background: var(--color-white);
   font-size: 12px;
   color: var(--color-gray-medium);
   transition: 0.2s;
+}
+
+.end-adornment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 16px;
 }

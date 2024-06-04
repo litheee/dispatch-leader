@@ -1,0 +1,62 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  button {
+    margin-top: 24px;
+    align-self: flex-end;
+  }
+
+  @media (max-width: 550px) {
+    button {
+      width: 100%;
+      margin-top: 18px;
+    }
+  }
+}
+
+.fields-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 24px;
+
+  & > *,
+  input {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contract-details-field {
+  margin-top: 16px;
+  width: 100%;
+
+  .contract-details-textarea {
+    height: 96px;
+
+    &:placeholder-shown ~ label {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    label,
+    &:focus ~ label {
+      top: -8px;
+      transform: none;
+    }
+  }
+}
+
+.textarea-end-adornment {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

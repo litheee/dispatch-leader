@@ -43,3 +43,10 @@ h1 {
   font-weight: 700;
   line-height: 58px;
 }
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}

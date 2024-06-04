@@ -1,0 +1,48 @@
+.route-countries {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 13px 16px 6px 16px;
+  border: 1px solid #000;
+  font-size: 12px;
+  background: var(--color-gray-light);
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--color-red);
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &.active {
+    background: var(--color-white);
+
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.actions {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  display: flex;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

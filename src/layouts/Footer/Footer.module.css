@@ -120,10 +120,22 @@
 }
 
 .subscribe-text-field {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-white);
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    border: none;
+    border-bottom: 1px solid var(--color-white);
+  }
+}
+
+.subscribe-text-field input {
   border-radius: 0;
   padding: 4px;
-  border-bottom: 1px solid var(--color-white);
-  background: transparent;
+
   font-size: 10px;
   font-weight: 400;
   color: var(--color-white);

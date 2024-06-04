@@ -2,12 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
   font-family: 'Inter';
   font-weight: 600;
   box-sizing: border-box;
   transition: 0.2s ease-in-out;
-  cursor: pointer;
 }
 
 .size-large {

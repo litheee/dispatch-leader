@@ -11,7 +11,10 @@ import {
   CarriersPage,
   BrokersPage,
   ShippersPage,
-  LogInPage
+  LogInPage,
+  CarriersProfilePage,
+  OrderPage,
+  LoadboardPage
 } from '@/pages'
 
 export const router = createBrowserRouter([
@@ -51,5 +54,22 @@ export const router = createBrowserRouter([
   {
     path: ROUTE_NAMES.LOG_IN,
     element: <LogInPage />
+  },
+  {
+    element: <PageLayout role='admin' />,
+    children: [
+      {
+        path: ROUTE_NAMES.CARRIERS_PROFILE,
+        element: <CarriersProfilePage />
+      },
+      {
+        path: ROUTE_NAMES.ORDER,
+        element: <OrderPage />
+      },
+      {
+        path: ROUTE_NAMES.LOADBOARD,
+        element: <LoadboardPage />
+      }
+    ]
   }
 ])

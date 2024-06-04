@@ -5,6 +5,9 @@ export const ROUTE_NAMES = {
   CONTACT_US: '/contact-us',
   NEWS: '/news',
   CARRIERS: '/carriers',
+  CARRIERS_PROFILE: '/carriers/profile',
   BROKERS: '/brokers',
-  SHIPPERS: '/shippers'
+  SHIPPERS: '/shippers',
+  ORDER: '/order',
+  LOADBOARD: '/loadboard'
 }

@@ -1,3 +1,8 @@
 export { Button } from './Button/Button'
 export { TextField } from './TextField/TextField'
 export { Checkbox } from './Checkbox/Checkbox'
+export { Textarea } from './Textarea/Textarea'
+export { Select } from './Select/Select'
+export { Badge } from './Badge/Badge'
+export { Rating } from './Rating/Rating'
+export { TabItem, TabList } from './Tabs'

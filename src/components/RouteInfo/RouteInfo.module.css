@@ -1,0 +1,181 @@
+.route-info {
+  display: grid;
+  grid-template-columns: 386px 101px 144px 193px 97px 150px 250px;
+  padding: 18px 16px;
+  box-shadow: 0px 4px 8px 0px rgba(92, 101, 106, 0.25);
+  background: var(--color-white);
+}
+
+.column {
+  padding: 0 11.5px;
+  border-right: 1px solid rgba(57, 72, 87, 0.2);
+
+  &:first-of-type {
+    padding-left: 0;
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+.company-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.company-img {
+  width: 48px;
+  height: 48px;
+}
+
+.company-name {
+  p {
+    &:first-of-type {
+      white-space: nowrap;
+      font-size: 24px;
+    }
+
+    &:last-of-type {
+      font-size: 12px;
+      margin-top: 4px;
+    }
+  }
+}
+
+.broker {
+  position: relative;
+  top: 12px;
+  text-align: end;
+  font-size: 14px;
+}
+
+.days-to-pay {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  font-size: 10px;
+  font-weight: 200;
+
+  span:last-of-type {
+    font-size: 12px;
+    color: var(--color-red);
+    font-weight: 400;
+  }
+}
+
+.company-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 16px;
+
+  p {
+    font-size: 14px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-red);
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 27px;
+
+  p {
+    text-align: center;
+    font-size: 24px;
+
+    &:last-of-type {
+      font-size: 18px;
+    }
+  }
+}
+
+.dates {
+  p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+
+    &:nth-of-type(2) {
+      margin-top: 48px;
+    }
+
+    &:nth-of-type(3) {
+      margin-top: 9px;
+    }
+  }
+}
+
+.route {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.route-distance {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #93aec9;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--color-red);
+    }
+  }
+}
+
+.arrow {
+  margin: 0 auto;
+  width: 1px;
+  height: 8px;
+  background: var(--color-red);
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.special-information {
+  h4 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+.map {
+  width: 227px;
+  height: 128px;
+}

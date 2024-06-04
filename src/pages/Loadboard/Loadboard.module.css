@@ -1,0 +1,53 @@
+.page {
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+
+  button {
+    display: flex;
+    gap: 8px;
+    font-weight: 400;
+
+    &:nth-of-type(2) {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    svg {
+      fill: var(--color-red);
+    }
+  }
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+
+  & > span {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.table {
+  margin-top: 24px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+  margin-top: 48px;
+}

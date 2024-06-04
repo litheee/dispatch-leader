@@ -1,0 +1,21 @@
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  background: var(--color-gray-medium);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+
+  button {
+    display: flex;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--color-white);
+    }
+  }
+}
