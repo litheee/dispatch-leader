@@ -2,8 +2,6 @@ import { CompanyProfileForm } from '@/components'
 
 import { TabItem, TabList } from '@/ui'
 
-import classes from './CarriersProfile.module.css'
-
 export const CarriersProfilePage = () => {
   return (
     <>
